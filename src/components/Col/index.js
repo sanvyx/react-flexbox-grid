@@ -50,7 +50,12 @@ const width = ({ width, xs, sm, md, lg, xl }) => {
 };
 
 const Col = styled.div`
+  & > * {
+    box-sizing: border-box;
+  }
+  
   flex: 1 1 0%;
+  max-height: 100%;
   ${width};
 `;
 

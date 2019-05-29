@@ -1,20 +1,17 @@
-export default
-  `<Grid>
-  <Col>
-    <Content />
+export default `<Grid gaps="1em">
+  <Col xs={6}>
+    <Content>Lorem, ipsum.</Content>
   </Col>
-  <Col>
-    <Content darker />
+  <Col xs={6}>
+    <Content>Lorem, ipsum dolor.</Content>
   </Col>
-  <Col>
-    <Content darkest />
+  <Col xs={4}>
+    <Content>Lorem, ipsum dolor.</Content>
   </Col>
-</Grid>
-<Grid>
-  <Col>
-    <Content darkest />
+  <Col xs={4}>
+    <Content>Lorem ipsum dolor sit amet consectetur.</Content>
   </Col>
-  <Col>
-    <Content darker />
+  <Col xs={4}>
+    <Content>Lorem, ipsum.</Content>
   </Col>
 </Grid>`;

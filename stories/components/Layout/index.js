@@ -5,6 +5,7 @@ import Code from "../Code";
 import Grid from "../../../src/components/Grid";
 import Col from "../../../src/components/Col";
 import theme from "../theme";
+import Content from "../Content";
 
 const Container = styled.div`
   margin: 20px;
@@ -17,12 +18,14 @@ const Layout = ({ title, code, children }) => {
   return (
     <ThemeProvider theme={theme}>
       <Container>
-        <Grid gaps="16px">
-          <Col>
+        <Grid>
+          <Col xs={6}>
             <Title>{title}</Title>
-            {children}
+            <Grid>
+              <Col>{children}</Col>
+            </Grid>
           </Col>
-          <Col>
+          <Col xs={6}>
             <Title>Code</Title>
             <Code>{code}</Code>
           </Col>

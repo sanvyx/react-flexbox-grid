@@ -13,13 +13,13 @@ import "../index.css";
 storiesOf("Grid", module).add("Nesting", () => (
   <Layout title="Nesting" code={code}>
     <Grid gaps="1em">
-      <Col width={2 / 3}>
+      <Col xs={8}>
         <Content>
           <Grid gaps=".5em">
             <Col>
               <Content darker>1/3</Content>
             </Col>
-            <Col width={2 / 3}>
+            <Col xs={8}>
               <Content darker>
                 <Grid gaps=".5em">
                   <Col>
@@ -34,7 +34,7 @@ storiesOf("Grid", module).add("Nesting", () => (
           </Grid>
         </Content>
       </Col>
-      <Col width={1 / 3}>
+      <Col xs={4}>
         <Content>1/3</Content>
       </Col>
     </Grid>

@@ -1,36 +1,35 @@
-export default
-  `<Grid gaps="1em">
-  <Col width={1 / 4}>
+export default `<Grid gaps="1em">
+  <Col xs={3}>
     <Content />
   </Col>
-  <Col width={1 / 4}>
+  <Col xs={3}>
     <Content />
   </Col>
-  <Col width={1 / 4}>
+  <Col xs={3}>
     <Content />
   </Col>
-  <Col width={1 / 4}>
-    <Content />
-  </Col>
-
-  <Col width={1 / 3}>
-    <Content />
-  </Col>
-  <Col width={1 / 3}>
-    <Content />
-  </Col>
-  <Col width={1 / 3}>
+  <Col xs={3}>
     <Content />
   </Col>
 
-  <Col width={1 / 2}>
+  <Col xs={4}>
     <Content />
   </Col>
-  <Col width={1 / 2}>
+  <Col xs={4}>
+    <Content />
+  </Col>
+  <Col xs={4}>
     <Content />
   </Col>
 
-  <Col width={1}>
+  <Col xs={6}>
+    <Content />
+  </Col>
+  <Col xs={6}>
+    <Content />
+  </Col>
+
+  <Col>
     <Content />
   </Col>
 </Grid>`;

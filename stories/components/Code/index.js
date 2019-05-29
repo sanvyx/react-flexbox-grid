@@ -9,7 +9,13 @@ const Code = ({ children }) => {
   });
 
   return (
-    <pre style={{ fontSize: "13px" }}>
+    <pre
+      style={{
+        fontSize: "13px",
+        display: "block",
+        overflow: "auto"
+      }}
+    >
       <code className="language-jsx">{children}</code>
     </pre>
   );
