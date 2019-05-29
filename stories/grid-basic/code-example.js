@@ -1,20 +1,20 @@
 export default
-  `<Row>
-  <Cell>
+  `<Grid>
+  <Col>
     <Content />
-  </Cell>
-  <Cell>
+  </Col>
+  <Col>
     <Content darker />
-  </Cell>
-  <Cell>
+  </Col>
+  <Col>
     <Content darkest />
-  </Cell>
-</Row>
-<Row>
-  <Cell>
+  </Col>
+</Grid>
+<Grid>
+  <Col>
     <Content darkest />
-  </Cell>
-  <Cell>
+  </Col>
+  <Col>
     <Content darker />
-  </Cell>
-</Row>`;
+  </Col>
+</Grid>`;

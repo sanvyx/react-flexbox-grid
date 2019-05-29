@@ -24,9 +24,9 @@ const width = ({ width }) => {
     : makeWidthRule(width);
 };
 
-const Cell = styled.div`
+const Col = styled.div`
   flex: 1 1 0%;
   ${width};
 `;
 
-export default Cell;
+export default Col;

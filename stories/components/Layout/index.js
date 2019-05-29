@@ -2,8 +2,8 @@ import React from "react";
 import styled, { ThemeProvider } from "styled-components";
 import Title from "../Title";
 import Code from "../Code";
-import Row from "../../../src/components/Row";
-import Cell from "../../../src/components/Cell";
+import Grid from "../../../src/components/Grid";
+import Col from "../../../src/components/Col";
 import theme from "../theme";
 
 const Container = styled.div`
@@ -15,18 +15,18 @@ const Container = styled.div`
 
 const Layout = ({ title, code, children }) => {
   return (
-    <ThemeProvider theme={theme} active>
+    <ThemeProvider theme={theme}>
       <Container>
-        <Row gaps="16px">
-          <Cell>
+        <Grid gaps="16px">
+          <Col>
             <Title>{title}</Title>
             {children}
-          </Cell>
-          <Cell>
+          </Col>
+          <Col>
             <Title>Code</Title>
             <Code>{code}</Code>
-          </Cell>
-        </Row>
+          </Col>
+        </Grid>
       </Container>
     </ThemeProvider>
   );

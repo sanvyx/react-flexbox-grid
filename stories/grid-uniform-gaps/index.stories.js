@@ -4,48 +4,48 @@ import { storiesOf } from "@storybook/react";
 import Layout from "../components/Layout";
 import Content from "../components/Content";
 
-import Row from "../../src/components/Row";
-import Cell from "../../src/components/Cell";
+import Grid from "../../src/components/Grid";
+import Col from "../../src/components/Col";
 
 import code from "./code-example";
 import "../index.css";
 
-storiesOf("Row", module).add("Uniform gaps", () => (
+storiesOf("Grid", module).add("Uniform gaps", () => (
   <Layout title="Uniform gaps" code={code}>
-    <Row gaps="1em">
-      <Cell width={1 / 4}>
+    <Grid gaps="1em">
+      <Col width={1 / 4}>
         <Content />
-      </Cell>
-      <Cell width={1 / 4}>
+      </Col>
+      <Col width={1 / 4}>
         <Content />
-      </Cell>
-      <Cell width={1 / 4}>
+      </Col>
+      <Col width={1 / 4}>
         <Content />
-      </Cell>
-      <Cell width={1 / 4}>
+      </Col>
+      <Col width={1 / 4}>
         <Content />
-      </Cell>
+      </Col>
 
-      <Cell width={1 / 3}>
+      <Col width={1 / 3}>
         <Content />
-      </Cell>
-      <Cell width={1 / 3}>
+      </Col>
+      <Col width={1 / 3}>
         <Content />
-      </Cell>
-      <Cell width={1 / 3}>
+      </Col>
+      <Col width={1 / 3}>
         <Content />
-      </Cell>
+      </Col>
 
-      <Cell width={1 / 2}>
+      <Col width={1 / 2}>
         <Content />
-      </Cell>
-      <Cell width={1 / 2}>
+      </Col>
+      <Col width={1 / 2}>
         <Content />
-      </Cell>
+      </Col>
 
-      <Cell width={1}>
+      <Col width={1}>
         <Content />
-      </Cell>
-    </Row>
+      </Col>
+    </Grid>
   </Layout>
 ));

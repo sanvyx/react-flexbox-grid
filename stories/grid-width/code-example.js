@@ -1,24 +1,24 @@
 export default
-  `<Row gaps="1em">
-  <Cell width="50%">
+  `<Grid gaps="1em">
+  <Col width="50%">
     <Content>50%</Content>
-  </Cell>
-  <Cell>
+  </Col>
+  <Col>
     <Content>auto</Content>
-  </Cell>
-  <Cell width={1 / 2}>
+  </Col>
+  <Col width={1 / 2}>
     <Content>1/2</Content>
-  </Cell>
-  <Cell width={1 / 4}>
+  </Col>
+  <Col width={1 / 4}>
     <Content>1/4</Content>
-  </Cell>
-  <Cell width={1 / 4}>
+  </Col>
+  <Col width={1 / 4}>
     <Content>1/4</Content>
-  </Cell>
-  <Cell width="300px">
+  </Col>
+  <Col width="300px">
     <Content>300px</Content>
-  </Cell>
-  <Cell>
+  </Col>
+  <Col>
     <Content>auto</Content>
-  </Cell>
-</Row>`;
+  </Col>
+</Grid>`;

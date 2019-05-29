@@ -16,7 +16,7 @@ const gaps = ({ gaps }) => {
   return css;
 };
 
-const Row = styled.div`
+const Grid = styled.div`
   & > * {
     box-sizing: border-box;
   }
@@ -29,4 +29,4 @@ const Row = styled.div`
   ${gaps};
 `;
 
-export default Row;
+export default Grid;

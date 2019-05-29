@@ -4,32 +4,32 @@ import { storiesOf } from "@storybook/react";
 import Layout from "../components/Layout";
 import Content from "../components/Content";
 
-import Row from "../../src/components/Row";
-import Cell from "../../src/components/Cell";
+import Grid from "../../src/components/Grid";
+import Col from "../../src/components/Col";
 
 import code from "./code-example";
 import "../index.css";
 
-storiesOf("Row", module).add("Basic grid", () => (
+storiesOf("Grid", module).add("Basic grid", () => (
   <Layout title="Basic grid" code={code}>
-    <Row>
-      <Cell>
+    <Grid>
+      <Col>
         <Content />
-      </Cell>
-      <Cell>
+      </Col>
+      <Col>
         <Content darker />
-      </Cell>
-      <Cell>
+      </Col>
+      <Col>
         <Content darkest />
-      </Cell>
-    </Row>
-    <Row>
-      <Cell>
+      </Col>
+    </Grid>
+    <Grid>
+      <Col>
         <Content darkest />
-      </Cell>
-      <Cell>
+      </Col>
+      <Col>
         <Content darker />
-      </Cell>
-    </Row>
+      </Col>
+    </Grid>
   </Layout>
 ));

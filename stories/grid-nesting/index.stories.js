@@ -4,39 +4,39 @@ import { storiesOf } from "@storybook/react";
 import Layout from "../components/Layout";
 import Content from "../components/Content";
 
-import Row from "../../src/components/Row";
-import Cell from "../../src/components/Cell";
+import Grid from "../../src/components/Grid";
+import Col from "../../src/components/Col";
 
 import code from "./code-example";
 import "../index.css";
 
-storiesOf("Row", module).add("Nesting", () => (
+storiesOf("Grid", module).add("Nesting", () => (
   <Layout title="Nesting" code={code}>
-    <Row gaps="1em">
-      <Cell width={2 / 3}>
+    <Grid gaps="1em">
+      <Col width={2 / 3}>
         <Content>
-          <Row gaps=".5em">
-            <Cell>
+          <Grid gaps=".5em">
+            <Col>
               <Content darker>1/3</Content>
-            </Cell>
-            <Cell width={2 / 3}>
+            </Col>
+            <Col width={2 / 3}>
               <Content darker>
-                <Row gaps=".5em">
-                  <Cell>
+                <Grid gaps=".5em">
+                  <Col>
                     <Content darkest>auto</Content>
-                  </Cell>
-                  <Cell>
+                  </Col>
+                  <Col>
                     <Content darkest>auto</Content>
-                  </Cell>
-                </Row>
+                  </Col>
+                </Grid>
               </Content>
-            </Cell>
-          </Row>
+            </Col>
+          </Grid>
         </Content>
-      </Cell>
-      <Cell width={1 / 3}>
+      </Col>
+      <Col width={1 / 3}>
         <Content>1/3</Content>
-      </Cell>
-    </Row>
+      </Col>
+    </Grid>
   </Layout>
 ));
