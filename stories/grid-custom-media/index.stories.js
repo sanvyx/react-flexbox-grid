@@ -10,8 +10,8 @@ import Col from "../../src/components/Col";
 import code from "./code-example";
 import "../index.css";
 
-storiesOf("Grid", module).add("Responsive", () => (
-  <Layout title="Responsive" code={code}>
+storiesOf("Grid", module).add("Responsive - custom media", () => (
+  <Layout title="Responsive - custom media" code={code}>
     <Grid gaps="1em">
       <Col width={{ all: 1 / 2, "480px": 1, "540px": 3 / 4  }}>
         <Content>Full/Halves</Content>
