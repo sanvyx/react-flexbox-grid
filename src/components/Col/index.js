@@ -53,10 +53,12 @@ const Col = styled.div`
   & > * {
     box-sizing: border-box;
   }
-  
+
   flex: 1 1 0%;
   max-height: 100%;
   ${width};
+  margin-left: ${({ offset }) => (offset / 12) * 100 + "%"};
+  ${({ alignSelf }) => (alignSelf ? `align-self: ${alignSelf}` : "")};
 `;
 
 export default Col;
