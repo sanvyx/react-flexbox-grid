@@ -1,5 +1,4 @@
-# gatsby-starter-hello-world
-Usage
+# Usage
 
 ```
 npm install @sanvyx/react-flexbox-grid
