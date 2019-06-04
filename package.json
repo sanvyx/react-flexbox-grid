@@ -1,7 +1,7 @@
 {
   "name": "@sanvyx/react-flexbox-grid",
   "description": "Simple to use react grid",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -50,5 +50,6 @@
   },
   "repository": "github:sanvyx/react-flexbox-grid",
   "keywords":["React", "Flexbox", "Grid"],
+  "homepage": "https://sanvyx.github.io/react-flexbox-grid/",
   "license": "MIT"
 }
