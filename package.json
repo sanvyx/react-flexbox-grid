@@ -8,10 +8,8 @@
     "dist"
   ],
   "dependencies": {
-    "prismjs": "^1.16.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
     "styled-components": "^4.2.0"
   },
   "scripts": {
@@ -46,10 +44,15 @@
     "babel-loader": "^8.0.5",
     "babel-plugin-styled-components": "^1.10.0",
     "cross-env": "^5.2.0",
+    "prismjs": "^1.16.0",
     "rimraf": "^2.6.3"
   },
   "repository": "github:sanvyx/react-flexbox-grid",
-  "keywords":["React", "Flexbox", "Grid"],
+  "keywords": [
+    "React",
+    "Flexbox",
+    "Grid"
+  ],
   "homepage": "https://sanvyx.github.io/react-flexbox-grid/",
   "license": "MIT"
 }
