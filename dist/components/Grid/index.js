@@ -33,7 +33,7 @@ var gaps = function gaps(_ref) {
 
 var Grid = _styledComponents.default.div.withConfig({
   displayName: "Grid",
-  componentId: "sc-1nscn35-0"
+  componentId: "r7ukyq-0"
 })(["& > *{box-sizing:border-box;}display:flex;flex-wrap:wrap;align-items:", ";width:100%;", ";"], function (_ref2) {
   var alignItems = _ref2.alignItems;
   return alignItems || "stretch";

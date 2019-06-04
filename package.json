@@ -1,7 +1,7 @@
 {
   "name": "@sanvyx/react-flexbox-grid",
   "description": "Simple to use react grid",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [

@@ -76,7 +76,7 @@ var width = function width(_ref7) {
 
 var Col = _styledComponents.default.div.withConfig({
   displayName: "Col",
-  componentId: "sknd3y-0"
+  componentId: "sc-1vdm2jz-0"
 })(["& > *{box-sizing:border-box;}flex:1 1 0%;max-height:100%;", ";margin-left:", ";", ";"], width, function (_ref8) {
   var offset = _ref8.offset;
   return offset / 12 * 100 + "%";
