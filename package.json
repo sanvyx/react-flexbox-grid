@@ -1,6 +1,11 @@
 {
-  "name": "flexbox-grid-v2",
+  "name": "flexbox-grid",
   "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "private": true,
   "dependencies": {
     "prismjs": "^1.16.0",
@@ -10,12 +15,8 @@
     "styled-components": "^4.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "start": "start-storybook -p 6006",
+    "build": "cross-env NODE_PATH=src rimraf dist docs && build-storybook -c .storybook -o docs && cross-env NODE_ENV=production babel src --out-dir dist --copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -24,6 +25,7 @@
     "production": [
       ">0.2%",
       "not dead",
+      "not ie <= 11",
       "not op_mini all"
     ],
     "development": [
@@ -33,11 +35,17 @@
     ]
   },
   "devDependencies": {
-    "@storybook/react": "^5.0.11",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
     "@storybook/addon-actions": "^5.0.11",
     "@storybook/addon-links": "^5.0.11",
     "@storybook/addons": "^5.0.11",
-    "@babel/core": "^7.4.5",
-    "babel-loader": "^8.0.5"
+    "@storybook/react": "^5.0.11",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-styled-components": "^1.10.0",
+    "cross-env": "^5.2.0",
+    "rimraf": "^2.6.3"
   }
 }
