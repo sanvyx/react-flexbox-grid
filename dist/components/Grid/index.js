@@ -34,10 +34,13 @@ var gaps = function gaps(_ref) {
 var Grid = _styledComponents.default.div.withConfig({
   displayName: "Grid",
   componentId: "r7ukyq-0"
-})(["& > *{box-sizing:border-box;}display:flex;flex-wrap:wrap;align-items:", ";width:100%;", ";"], function (_ref2) {
+})(["& > *{box-sizing:border-box;}display:flex;flex-wrap:wrap;align-items:", ";width:100%;", ";justify-content:", ";"], function (_ref2) {
   var alignItems = _ref2.alignItems;
   return alignItems || "stretch";
-}, gaps);
+}, gaps, function (_ref3) {
+  var justifyContent = _ref3.justifyContent;
+  return justifyContent || "normal";
+});
 
 var _default = Grid;
 exports.default = _default;
