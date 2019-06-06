@@ -20,13 +20,12 @@ const Grid = styled.div`
   & > * {
     box-sizing: border-box;
   }
-
   display: flex;
   flex-wrap: wrap;
   align-items: ${({ alignItems }) => alignItems || "stretch"};
-
   width: 100%;
   ${gaps};
+  justify-content: ${({ justifyContent }) => justifyContent || "normal"};
 `;
 
 export default Grid;
