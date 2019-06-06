@@ -18,7 +18,7 @@ const Layout = ({ title, code, children }) => {
   return (
     <ThemeProvider theme={theme}>
       <Container>
-        <Grid>
+        <Grid gaps="1em">
           <Col xs={6}>
             <Title>{title}</Title>
             <Grid>

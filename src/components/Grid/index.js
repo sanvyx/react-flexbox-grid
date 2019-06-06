@@ -23,7 +23,6 @@ const Grid = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: ${({ alignItems }) => alignItems || "stretch"};
-  width: 100%;
   ${gaps};
   justify-content: ${({ justifyContent }) => justifyContent || "normal"};
 `;
