@@ -1,16 +1,16 @@
 {
   "name": "@sanvyx/react-flexbox-grid",
   "description": "Simple to use react grid",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
     "dist"
   ],
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^4.2.0"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1"
   },
   "scripts": {
     "start": "start-storybook -p 6006",
@@ -33,19 +33,19 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-actions": "^5.0.11",
-    "@storybook/addon-links": "^5.0.11",
-    "@storybook/addons": "^5.0.11",
-    "@storybook/react": "^5.0.11",
-    "babel-loader": "^8.0.5",
-    "babel-plugin-styled-components": "^1.10.0",
-    "cross-env": "^5.2.0",
-    "prismjs": "^1.16.0",
-    "rimraf": "^2.6.3"
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/addons": "^6.1.11",
+    "@storybook/react": "^6.1.11",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-styled-components": "^1.12.0",
+    "cross-env": "^7.0.3",
+    "prismjs": "^1.22.0",
+    "rimraf": "^3.0.2"
   },
   "repository": "github:sanvyx/react-flexbox-grid",
   "keywords": [
